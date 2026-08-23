@@ -1,7 +1,7 @@
 ## Put your Facebook cookie in the accounts folder..!¡
 
 
-<img src="https://raw.githubusercontent.com/FX-SIFAT/GOATBOT-V2/refs/heads/main/sifu_database/Screenshot_20260710-110606.jpg"/>
+<img src="https://raw.githubusercontent.com/FX-SIF4T/GOATBOT-V2/refs/heads/main/sifu_database/Screenshot_20260710-110606.jpg"/>
 
 
 
