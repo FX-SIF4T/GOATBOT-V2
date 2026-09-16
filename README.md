@@ -25,7 +25,7 @@
   <br/>
 
 
-  <a href="https://github.com/MYB-SIFU" style="text-decoration: none;">
+  <a href="https://github.com/FX-ST" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/⚡%20IMPROVED%20BY-S1F4T-00D9FF?style=for-the-badge&logo=github&logoColor=black" />
   </a>
   <br/><br/>
@@ -63,7 +63,7 @@
   <p align="center">
     <img src="https://i.imgur.com/SLtCLGs.jpeg" width="120" style="border-radius: 10px; display: block; margin-bottom: 10px;" />
     <br />
-    <a href="https://www.facebook.com/maybexenos">
+    <a href="https://www.facebook.com/sifaturtese">
       <img src="https://img.shields.io/badge/CONTACT-ME-black?style=for-the-badge&logo=Facebook" height="30" alt="CONTACT ME 🐣" />
     </a>
   </p>
