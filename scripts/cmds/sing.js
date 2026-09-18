@@ -4,7 +4,7 @@ const path  = require("path");
 const fs    = require("fs-extra");
 const axios = require("axios");
 
-const SIFAT_CDTESE = "https://raw.githubusercontent.com/MYB-SIFAT/SIFATChudtese/refs/heads/main/sifatapichudtese.json";
+const SIFAT_CDTESE = "https://raw.githubusercontent.com/FX-SIF4T/API-STORE/refs/heads/main/FXS_APIS/apis.json";
 const SIFAT_SXY    = "";
 
 let SIFAT = process.env.SIFU_API_BASE ? process.env.SIFU_API_BASE.replace(/\/+$/, "") : null;
@@ -12,7 +12,7 @@ const DHON = (async () => {
     if (SIFAT) return;
     try {
         const r = await axios.get(SIFAT_CDTESE, { timeout: 6000 });
-        const u = r.data?.music;
+        const u = r.data?.music_api;
         if (u && u.startsWith("http")) SIFAT = u.replace(/\/+$/, "");
     } catch {}
     if (!SIFAT) SIFAT = SIFAT_SXY;
