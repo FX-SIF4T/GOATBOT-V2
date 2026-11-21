@@ -1,10 +1,11 @@
-FROM node:20-bullseye
+FROM node:20-bookworm-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
     python3 \
-    python3-pip \
     pkg-config \
     build-essential \
     libcairo2-dev \
@@ -13,10 +14,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libjpeg-dev \
     libgif-dev \
     librsvg2-dev \
-    && rm -rf /var/lib/apt/lists/*
+    ; \
+    rm -rf /var/lib/apt/lists/*
 
 COPY package.json ./
-RUN npm install --legacy-peer-deps && npm cache clean --force
+COPY sifu_database/postinstall.js ./sifu_database/postinstall.js
+RUN npm install --legacy-peer-deps --no-audit --no-fund \
+    && npm rebuild sqlite3 --build-from-source \
+    && npm cache clean --force
 
 COPY . .
 
